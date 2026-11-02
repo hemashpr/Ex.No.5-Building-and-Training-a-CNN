@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="560" viewBox="0 0 1500 560">
+<rect width="1500" height="560" fill="#ffffff"/>
+<text x="750" y="48" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#172033">PyTorch CNN Architecture</text>
+<text x="750" y="78" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#526078">CIFAR-10 image classification • input size 3 × 32 × 32</text>
+<rect x="35" y="145" width="120" height="95" rx="12" fill="#dbeafe" stroke="#64748b" stroke-width="1.5"/>
+<text x="95" y="183" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#172033">Input</text>
+<text x="95" y="211" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#334155">3 × 32 × 32</text><rect x="185" y="145" width="130" height="95" rx="12" fill="#ede9fe" stroke="#64748b" stroke-width="1.5"/>
+<text x="250" y="183" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#172033">Conv 3×3</text>
+<text x="250" y="211" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#334155">32 filters</text><rect x="340" y="145" width="130" height="95" rx="12" fill="#ede9fe" stroke="#64748b" stroke-width="1.5"/>
+<text x="405" y="183" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#172033">Conv 3×3</text>
+<text x="405" y="211" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#334155">32 filters</text><rect x="495" y="145" width="115" height="95" rx="12" fill="#d1fae5" stroke="#64748b" stroke-width="1.5"/>
+<text x="552.5" y="183" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#172033">MaxPool</text>
+<text x="552.5" y="211" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#334155">16 × 16</text><rect x="635" y="145" width="130" height="95" rx="12" fill="#ede9fe" stroke="#64748b" stroke-width="1.5"/>
+<text x="700" y="183" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#172033">Conv 3×3</text>
+<text x="700" y="211" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#334155">64 filters</text><rect x="790" y="145" width="130" height="95" rx="12" fill="#ede9fe" stroke="#64748b" stroke-width="1.5"/>
+<text x="855" y="183" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#172033">Conv 3×3</text>
+<text x="855" y="211" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#334155">64 filters</text><rect x="945" y="145" width="115" height="95" rx="12" fill="#d1fae5" stroke="#64748b" stroke-width="1.5"/>
+<text x="1002.5" y="183" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#172033">MaxPool</text>
+<text x="1002.5" y="211" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#334155">8 × 8</text><rect x="1085" y="145" width="130" height="95" rx="12" fill="#ede9fe" stroke="#64748b" stroke-width="1.5"/>
+<text x="1150" y="183" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#172033">Conv 3×3</text>
+<text x="1150" y="211" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#334155">128 filters</text><rect x="1235" y="145" width="115" height="95" rx="12" fill="#d1fae5" stroke="#64748b" stroke-width="1.5"/>
+<text x="1292.5" y="183" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#172033">MaxPool</text>
+<text x="1292.5" y="211" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#334155">4 × 4</text>
+<path d="M 155 192 h 25 l -7 -7 m 7 7 l -7 7" stroke="#64748b" stroke-width="2" fill="none"/><path d="M 315 192 h 25 l -7 -7 m 7 7 l -7 7" stroke="#64748b" stroke-width="2" fill="none"/><path d="M 470 192 h 25 l -7 -7 m 7 7 l -7 7" stroke="#64748b" stroke-width="2" fill="none"/><path d="M 625 192 h 25 l -7 -7 m 7 7 l -7 7" stroke="#64748b" stroke-width="2" fill="none"/><path d="M 780 192 h 25 l -7 -7 m 7 7 l -7 7" stroke="#64748b" stroke-width="2" fill="none"/><path d="M 935 192 h 25 l -7 -7 m 7 7 l -7 7" stroke="#64748b" stroke-width="2" fill="none"/><path d="M 1075 192 h 25 l -7 -7 m 7 7 l -7 7" stroke="#64748b" stroke-width="2" fill="none"/><path d="M 1225 192 h 25 l -7 -7 m 7 7 l -7 7" stroke="#64748b" stroke-width="2" fill="none"/>
+<path d="M 1292 245 V 305 H 120 V 345" stroke="#64748b" stroke-width="2" fill="none"/>
+<rect x="35" y="345" width="180" height="85" rx="12" fill="#fef3c7" stroke="#64748b"/>
+<text x="125" y="378" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#172033">Flatten</text><text x="125" y="404" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#334155">2048 features</text>
+<path d="M 215 387 H 280" stroke="#64748b" stroke-width="2"/><path d="M 272 380 l 8 7 -8 7" stroke="#64748b" stroke-width="2" fill="none"/>
+<rect x="285" y="345" width="205" height="85" rx="12" fill="#ede9fe" stroke="#64748b"/><text x="387" y="378" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#172033">Fully Connected</text><text x="387" y="404" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#334155">256 units + ReLU</text>
+<path d="M 490 387 H 555" stroke="#64748b" stroke-width="2"/><path d="M 547 380 l 8 7 -8 7" stroke="#64748b" stroke-width="2" fill="none"/>
+<rect x="560" y="345" width="165" height="85" rx="12" fill="#fee2e2" stroke="#64748b"/><text x="642" y="378" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#172033">Dropout</text><text x="642" y="404" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#334155">p = 0.5</text>
+<path d="M 725 387 H 790" stroke="#64748b" stroke-width="2"/><path d="M 782 380 l 8 7 -8 7" stroke="#64748b" stroke-width="2" fill="none"/>
+<rect x="795" y="345" width="200" height="85" rx="12" fill="#dbeafe" stroke="#64748b"/><text x="895" y="378" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#172033">Output Layer</text><text x="895" y="404" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#334155">10 class logits</text>
+<path d="M 995 387 H 1060" stroke="#64748b" stroke-width="2"/><path d="M 1052 380 l 8 7 -8 7" stroke="#64748b" stroke-width="2" fill="none"/>
+<rect x="1065" y="345" width="300" height="85" rx="12" fill="#d1fae5" stroke="#64748b"/><text x="1215" y="378" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#172033">Predicted CIFAR-10 Class</text><text x="1215" y="404" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#334155">Airplane • Automobile • Bird • ... • Truck</text>
+<text x="750" y="500" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#64748b">Each convolution block uses ReLU activation; pooling reduces spatial dimensions; dropout regularizes the network.</text>
+</svg>
