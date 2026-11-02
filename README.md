@@ -11,7 +11,6 @@ To build, train and evaluate a Convolutional Neural Network (CNN) using PyTorch 
 - Matplotlib
 - Seaborn
 - Scikit-learn
-- Pandas
 
 Install the dependencies:
 
@@ -370,7 +369,7 @@ print("\nRESULT: PyTorch CNN training and evaluation completed.")
 
 ## Output
 
-The program prints the selected device, dataset dimensions, CNN architecture, epoch-wise training metrics, final test accuracy and classification report.
+The program prints the selected device, dataset dimensions, CNN architecture, epoch-wise training metrics, final test accuracy and classification report. No external CSV dataset or CSV output is required.
 
 The dataset dimensions are:
 
@@ -391,7 +390,6 @@ training_graphs.png
 confusion_matrix.png
 sample_predictions.png
 cnn_cifar10.pth
-training_history.csv
 
 RESULT: PyTorch CNN training and evaluation completed.
 ```
@@ -408,7 +406,6 @@ After running the program, the following graphs are generated in the working dir
 
 ## Model Files
 - `cnn_cifar10.pth` - trained CNN model weights.
-- `training_history.csv` - epoch-wise loss and accuracy values.
 
 ## Execution
 
