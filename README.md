@@ -370,35 +370,17 @@ print("\nRESULT: PyTorch CNN training and evaluation completed.")
 ## Output
 
 ```text
-DEVICE: CUDA or CPU
-
 TRAINING IMAGES: 50000
 TEST IMAGES: 10000
 IMAGE SHAPE: 3 x 32 x 32
 NUMBER OF CLASSES: 10
 
-Epoch [01/10] Train Loss: [runtime value] Train Accuracy: [runtime value]%
-Epoch [02/10] Train Loss: [runtime value] Train Accuracy: [runtime value]%
-...
-Epoch [10/10] Train Loss: [runtime value] Train Accuracy: [runtime value]%
-
-FINAL TEST ACCURACY: [runtime value]%
-
-GENERATED FILES
-training_graphs.png
-confusion_matrix.png
-sample_predictions.png
-cnn_cifar10.pth
-
-RESULT: PyTorch CNN training and evaluation completed.
+Training accuracy, test accuracy, training loss and test loss are recorded for each epoch.
+Final test accuracy and the classification report are printed after evaluation.
 ```
 
-![Training and test accuracy and loss](training_graphs.png)
-
-![CIFAR-10 confusion matrix](confusion_matrix.png)
-
-![Sample test image predictions](sample_predictions.png)
+![CNN training accuracy and loss graphs](training_graphs.svg)
 
 ## Result
 
-A Convolutional Neural Network was implemented and trained using PyTorch on the CIFAR-10 dataset.
+The PyTorch CNN was implemented and trained on CIFAR-10, with performance evaluated using test accuracy and class-wise metrics.
