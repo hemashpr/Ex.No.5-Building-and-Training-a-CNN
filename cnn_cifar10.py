@@ -1,4 +1,3 @@
-import os
 import random
 import numpy as np
 import matplotlib.pyplot as plt
@@ -7,7 +6,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 
-from torch.utils.data import DataLoader, Subset
+from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
 from sklearn.metrics import confusion_matrix, classification_report
 
@@ -282,15 +281,10 @@ plt.close(fig)
 # 9. Save trained model and history
 # ------------------------------------------------------------
 torch.save(model.state_dict(), "cnn_cifar10.pth")
-pd_history = __import__("pandas").DataFrame(history)
-pd_history.index = np.arange(1, EPOCHS + 1)
-pd_history.index.name = "epoch"
-pd_history.to_csv("training_history.csv")
 
 print("\nGENERATED FILES")
 print("training_graphs.png")
 print("confusion_matrix.png")
 print("sample_predictions.png")
 print("cnn_cifar10.pth")
-print("training_history.csv")
 print("\nRESULT: PyTorch CNN training and evaluation completed.")
