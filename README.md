@@ -369,22 +369,21 @@ print("\nRESULT: PyTorch CNN training and evaluation completed.")
 
 ## Output
 
-The program prints the selected device, dataset dimensions, CNN architecture, epoch-wise training metrics, final test accuracy and classification report. No external CSV dataset or CSV output is required.
-
-The dataset dimensions are:
-
 ```text
+DEVICE: CUDA or CPU
+
 TRAINING IMAGES: 50000
 TEST IMAGES: 10000
 IMAGE SHAPE: 3 x 32 x 32
 NUMBER OF CLASSES: 10
-```
 
-The epoch-wise accuracy and loss values and final test accuracy are calculated during execution. They depend on the installed PyTorch version and whether training runs on CPU or GPU; no fabricated accuracy values are reported here.
+Epoch [01/10] Train Loss: [runtime value] Train Accuracy: [runtime value]%
+Epoch [02/10] Train Loss: [runtime value] Train Accuracy: [runtime value]%
+...
+Epoch [10/10] Train Loss: [runtime value] Train Accuracy: [runtime value]%
 
-At the end of execution, the program prints:
+FINAL TEST ACCURACY: [runtime value]%
 
-```text
 GENERATED FILES
 training_graphs.png
 confusion_matrix.png
@@ -394,28 +393,12 @@ cnn_cifar10.pth
 RESULT: PyTorch CNN training and evaluation completed.
 ```
 
-## Graphs and Generated Images
+![Training and test accuracy and loss](training_graphs.png)
 
-After running the program, the following graphs are generated in the working directory:
+![CIFAR-10 confusion matrix](confusion_matrix.png)
 
-| File | Contents |
-|---|---|
-| `training_graphs.png` | Training/test accuracy and loss against epochs |
-| `confusion_matrix.png` | Classification performance across ten classes |
-| `sample_predictions.png` | Ten test images with actual and predicted labels |
-
-## Model Files
-- `cnn_cifar10.pth` - trained CNN model weights.
-
-## Execution
-
-Run the program from the repository directory:
-
-```bash
-python cnn_cifar10.py
-```
-
-The first execution downloads CIFAR-10 automatically. Training takes longer on CPU; a CUDA-enabled GPU is recommended.
+![Sample test image predictions](sample_predictions.png)
 
 ## Result
-A Convolutional Neural Network was implemented using PyTorch and trained on the CIFAR-10 dataset. The program evaluates the trained network and generates accuracy/loss graphs, a confusion matrix and sample image predictions.
+
+A Convolutional Neural Network was implemented and trained using PyTorch on the CIFAR-10 dataset.
