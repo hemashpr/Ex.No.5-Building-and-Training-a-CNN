@@ -10,7 +10,7 @@ Step 1: Import Libraries
 import tensorflow as tf
 from tensorflow.keras import datasets, layers, models
 from tensorflow.keras.utils import to_categorica
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt 
 import numpy as np
 
 Step 2: Load CIFAR-10 Dataset
